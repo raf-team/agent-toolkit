@@ -1,0 +1,33 @@
+README.md
+  s_3dfd4993025249::t_d1d75d01efd9a1 1-69
+.claude-plugin/marketplace.json
+  s_3dfd4993025249::t_f4768a8aab58cc 1-15
+.cursor-plugin/plugin.json
+  s_3dfd4993025249::t_e4715ce77551fb 1-10
+.claude-plugin/plugin.json
+  s_3dfd4993025249::t_8400cbafb8cf3b 1-10
+.mcp.json
+  s_3dfd4993025249::t_df82557e7024fd 1-13
+rules/raf-provider-needs.mdc
+  s_3dfd4993025249::t_f10c660f3b0df4 1-15
+LICENSE
+  s_3dfd4993025249::t_0efb8722d9394d 1-21
+skills/raf-provider-needs/SKILL.md
+  s_3dfd4993025249::t_2df372b007ea62 1-15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "890063b583ec4ef318cd82894c2a6b13906df0a2",
+  "prompts": {},
+  "sessions": {
+    "s_3dfd4993025249": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "33f84e18-8600-4412-ba5b-e0fa945f973a",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
