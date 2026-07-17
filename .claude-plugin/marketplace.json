@@ -1,0 +1,15 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "raf",
+  "owner": {
+    "name": "raf",
+    "url": "https://registry.rafads.com"
+  },
+  "plugins": [
+    {
+      "name": "raf",
+      "source": "./",
+      "description": "Fulfill service-capability needs (email, databases, auth, payments, DNS, hosting) through verified providers: the raf runtime MCP server plus the trigger skill"
+    }
+  ]
+}

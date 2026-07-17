@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "raf": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "rafads",
+        "mcp"
+      ],
+      "env": {
+        "RAFADS_CATALOG": "https://registry.rafads.com/raf-catalog.json"
+      }
+    }
+  }
+}

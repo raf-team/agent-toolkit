@@ -1,0 +1,10 @@
+{
+  "name": "raf",
+  "description": "Fulfill service-capability needs (email, databases, auth, payments, DNS, hosting) through verified providers: the raf runtime MCP server plus the trigger skill",
+  "version": "1.0.1",
+  "author": {
+    "name": "raf",
+    "url": "https://registry.rafads.com"
+  },
+  "homepage": "https://registry.rafads.com/agent-setup"
+}
