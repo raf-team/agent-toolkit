@@ -1,0 +1,21 @@
+rules/raf-provider-needs.mdc
+  s_7072d2b044b5c0::t_2c1f6a04aff720 2,6,8,10-14,16
+skills/raf-provider-needs/SKILL.md
+  s_7072d2b044b5c0::t_fd07241f7f1356 3,6,8,10-14,16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "2d991495ed13d6152b9e12613b90d98f03b45c27",
+  "prompts": {},
+  "sessions": {
+    "s_7072d2b044b5c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c7dead78-be30-476e-b84e-9e50e11ad388",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
