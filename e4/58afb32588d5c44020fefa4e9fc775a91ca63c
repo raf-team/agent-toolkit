@@ -1,0 +1,35 @@
+hooks/hooks.json
+  s_7072d2b044b5c0::t_d5eecfe9875465 1-15
+rules/raf-provider-needs.mdc
+  s_7072d2b044b5c0::t_a15cef8708f902 8,10-12
+commands/status.md
+  s_7072d2b044b5c0::t_cef9b8d4979aa2 1-12
+skills/raf-provider-needs/SKILL.md
+  s_7072d2b044b5c0::t_3c1e79a64cdc81 8,10-12
+hooks/session-context.md
+  s_7072d2b044b5c0::t_7f75a099401907 1-3
+commands/connect.md
+  s_7072d2b044b5c0::t_23f3b146cb4ea5 1-16
+scripts/check-parity.mjs
+  s_7072d2b044b5c0::t_90b05b4a3c03ae 1-25
+.github/workflows/parity.yml
+  s_7072d2b044b5c0::t_0f0f0e51fe63db 1-16
+.claude-plugin/plugin.json
+  s_7072d2b044b5c0::t_6e89290695fc06 3-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "e458afb32588d5c44020fefa4e9fc775a91ca63c",
+  "prompts": {},
+  "sessions": {
+    "s_7072d2b044b5c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c7dead78-be30-476e-b84e-9e50e11ad388",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
