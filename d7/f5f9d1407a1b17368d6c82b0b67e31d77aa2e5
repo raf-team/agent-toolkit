@@ -1,0 +1,19 @@
+.claude-plugin/plugin.json
+  s_7072d2b044b5c0::t_e5f5799b68f8b3 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "d7f5f9d1407a1b17368d6c82b0b67e31d77aa2e5",
+  "prompts": {},
+  "sessions": {
+    "s_7072d2b044b5c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c7dead78-be30-476e-b84e-9e50e11ad388",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
