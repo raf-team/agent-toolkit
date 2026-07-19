@@ -1,0 +1,21 @@
+hooks/session-context.md
+  s_7072d2b044b5c0::t_5ee6837eb5e049 3
+rules/raf-session-context.mdc
+  s_7072d2b044b5c0::t_f72d9b607743e9 6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "05b1ba0e11378746d60cdd47543c29d77383d294",
+  "prompts": {},
+  "sessions": {
+    "s_7072d2b044b5c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c7dead78-be30-476e-b84e-9e50e11ad388",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
