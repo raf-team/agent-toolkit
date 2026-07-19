@@ -1,0 +1,19 @@
+.claude-plugin/plugin.json
+  s_3aae239c2b6886::t_3a6a860b062eab 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "f84b54213e93c675350cef9bc60c66e4193a3f5c",
+  "prompts": {},
+  "sessions": {
+    "s_3aae239c2b6886": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "s_3aae239c2b6886",
+        "model": "unknown"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
