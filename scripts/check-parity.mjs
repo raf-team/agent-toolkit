@@ -1,25 +1,55 @@
-// Skill/rule parity check: the Claude skill and the Cursor-style rule must
-// stay semantically identical — same trigger description, byte-identical body.
+// Duplicated-content parity checks: paired files that must stay semantically
+// identical so drift between them (e.g. Claude Code vs Cursor surfaces of the
+// same instructions) fails CI instead of shipping silently.
 import { readFileSync } from "node:fs";
 
-const FILES = ["skills/raf-provider-needs/SKILL.md", "rules/raf-provider-needs.mdc"];
-
-const parse = (path) => {
+const parseFrontmatter = (path) => {
   const text = readFileSync(path, "utf8");
   const match = text.match(/^---\n([\s\S]*?)\n---\n/);
-  if (!match) throw new Error(`${path}: missing frontmatter`);
-  const description = match[1].match(/^description: (.*)$/m)?.[1];
-  if (!description) throw new Error(`${path}: missing description`);
-  return { description, body: text.slice(match[0].length).trim() };
+  return {
+    frontmatter: match ? match[1] : null,
+    body: match ? text.slice(match[0].length).trim() : text.trim(),
+  };
 };
 
-const [skill, rule] = FILES.map(parse);
-const failures = [];
-if (skill.description !== rule.description) failures.push("descriptions differ");
-if (skill.body !== rule.body) failures.push("bodies differ");
+const stripLeadingHeading = (text) => text.replace(/^#[^\n]*\n+/, "").trim();
 
-if (failures.length > 0) {
-  console.error(`Parity check failed (${FILES.join(" vs ")}): ${failures.join("; ")}`);
-  process.exit(1);
+const CHECKS = [
+  {
+    files: ["skills/raf-provider-needs/SKILL.md", "rules/raf-provider-needs.mdc"],
+    run: ([skill, rule]) => {
+      const failures = [];
+      const skillDescription = skill.frontmatter?.match(/^description: (.*)$/m)?.[1];
+      const ruleDescription = rule.frontmatter?.match(/^description: (.*)$/m)?.[1];
+      if (!skillDescription) failures.push("skill missing description");
+      if (!ruleDescription) failures.push("rule missing description");
+      if (skillDescription && ruleDescription && skillDescription !== ruleDescription) {
+        failures.push("descriptions differ");
+      }
+      if (skill.body !== rule.body) failures.push("bodies differ");
+      return failures;
+    },
+  },
+  {
+    files: ["hooks/session-context.md", "rules/raf-session-context.mdc"],
+    run: ([hook, rule]) => {
+      const failures = [];
+      if (stripLeadingHeading(hook.body) !== rule.body) failures.push("bodies differ");
+      return failures;
+    },
+  },
+];
+
+let failed = false;
+for (const { files, run } of CHECKS) {
+  const parsed = files.map(parseFrontmatter);
+  const failures = run(parsed);
+  if (failures.length > 0) {
+    failed = true;
+    console.error(`Parity check failed (${files.join(" vs ")}): ${failures.join("; ")}`);
+  } else {
+    console.log(`Parity OK: ${files.join(" vs ")}`);
+  }
 }
-console.log("Parity OK: skill and rule share one description and one body.");
+
+if (failed) process.exit(1);
