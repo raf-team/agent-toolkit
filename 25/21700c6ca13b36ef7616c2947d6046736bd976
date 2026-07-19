@@ -1,0 +1,21 @@
+.agents/plugins/marketplace.json
+  s_7072d2b044b5c0::t_bac20f7b67bce2 1-14
+.codex-plugin/plugin.json
+  s_7072d2b044b5c0::t_973badbe4664a1 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "2521700c6ca13b36ef7616c2947d6046736bd976",
+  "prompts": {},
+  "sessions": {
+    "s_7072d2b044b5c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c7dead78-be30-476e-b84e-9e50e11ad388",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
