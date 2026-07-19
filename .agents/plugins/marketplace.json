@@ -1,0 +1,14 @@
+{
+  "name": "raf",
+  "owner": {
+    "name": "raf",
+    "url": "https://registry.rafads.com"
+  },
+  "plugins": [
+    {
+      "name": "raf",
+      "source": "./",
+      "description": "Route explicit service calls to verified providers: the raf runtime MCP server plus the trigger skill"
+    }
+  ]
+}
