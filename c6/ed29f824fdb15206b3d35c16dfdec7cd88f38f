@@ -1,0 +1,19 @@
+README.md
+  s_c31fce8b86b9f5::t_507bed83d6be42 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "c6ed29f824fdb15206b3d35c16dfdec7cd88f38f",
+  "prompts": {},
+  "sessions": {
+    "s_c31fce8b86b9f5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ec8f6de1-3086-4d7e-bee0-e77a7e43029b",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
