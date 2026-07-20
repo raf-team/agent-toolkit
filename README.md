@@ -27,14 +27,17 @@ Per-agent notes:
   raf-team/agent-toolkit`, then `claude plugin install raf@agent-toolkit`.
 - **Cursor** — approve the `raf` server when it prompts on first use.
 - **Codex** — prompts per tool call by default; for unattended runs set
-  `default_tools_approval_mode = "approve"` under `[mcp_servers.raf]`.
+  `default_tools_approval_mode = "approve"` under `[mcp_servers.raf]`. The
+  plugin ships a SessionStart hook (live raf status in every session);
+  Codex gates new hooks behind a one-time review — approve it via `/hooks`.
 - **VS Code** — agent plugins are a Preview feature; enable
   `chat.plugins.enabled` if your organization manages that setting.
 
 ### No plugin support?
 
 `npx rafads@latest install` writes the configs directly (Claude Code, Codex,
-Cursor — and it's the only path that asks about telemetry interactively).
+Cursor, Copilot CLI — and it's the only path that asks about telemetry
+interactively).
 
 Or install the trigger skill from this repo:
 
