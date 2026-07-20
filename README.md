@@ -29,7 +29,7 @@ Per-agent notes:
 - **Codex** — prompts per tool call by default; for unattended runs set
   `default_tools_approval_mode = "approve"` under `[mcp_servers.raf]`.
   Codex plugins can't ship hooks on current builds (the `plugin_hooks`
-  feature is removed; measured 2026-07-19 on codex-cli 0.144), so the
+  feature is removed; measured 2026-07-19 on codex-cli 0.144.1), so the
   always-on trigger channel is the AGENTS.md section `npx rafads@latest install`
   writes — run it alongside the plugin. The plugin's bundled hook is
   inert until Codex restores plugin hooks.
