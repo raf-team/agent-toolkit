@@ -1,0 +1,30 @@
+README.md
+  s_c31fce8b86b9f5::t_e1ade75ab3aa56 30-32
+  s_c31fce8b86b9f5::t_8b35473f9c56e9 39-40
+.codex-plugin/plugin.json
+  s_c31fce8b86b9f5::t_00dd42e146e6aa 3-4,11-12
+.claude-plugin/plugin.json
+  s_c31fce8b86b9f5::t_ac93870fbcee8e 4
+hooks/codex-hooks.json
+  s_c31fce8b86b9f5::t_9ae41ff1c27a2d 9
+  s_c31fce8b86b9f5::t_2a6cdbb7a203d7 1-8,10-16
+hooks/hooks.json
+  s_c31fce8b86b9f5::t_ded465c3b8b836 10
+  s_c31fce8b86b9f5::t_adca918a36aa53 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "4f742817d6702ebeb1792c30d346a2f4a6e3f1d7",
+  "prompts": {},
+  "sessions": {
+    "s_c31fce8b86b9f5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ec8f6de1-3086-4d7e-bee0-e77a7e43029b",
+        "model": "claude-fable-5"
+      },
+      "human_author": "pencount <149122028+pencount@users.noreply.github.com>"
+    }
+  }
+}
