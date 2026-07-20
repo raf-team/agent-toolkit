@@ -1,12 +1,13 @@
 {
   "name": "raf",
-  "version": "1.1.1",
-  "description": "Route explicit service calls to verified providers: the raf runtime MCP server plus the trigger skill",
+  "version": "1.2.0",
+  "description": "Route explicit service calls to verified providers: the raf runtime MCP server, the trigger skill, and a session-context hook",
   "author": {
     "name": "raf",
     "url": "https://registry.rafads.com"
   },
   "homepage": "https://registry.rafads.com/agent-setup",
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "hooks": "./hooks/codex-hooks.json"
 }
