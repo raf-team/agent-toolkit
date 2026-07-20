@@ -7,7 +7,8 @@
           {
             "type": "command",
             "command": "out=$(npx -y rafads hook-context 2>/dev/null) && [ -n \"$out\" ] && printf '%s\\n' \"$out\" || cat \"${PLUGIN_ROOT}/hooks/session-context.md\"",
-            "statusMessage": "raf session context"
+            "statusMessage": "raf session context",
+            "timeout": 15
           }
         ]
       }
